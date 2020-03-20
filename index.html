@@ -22,10 +22,20 @@
   </form>
   
   <script>
+  
+    function decaesar(string, key) {
+      resp = "";
+      for(i = 0; i < string.length; i++) {
+        resp += String.fromCharCode(parseInt(string.charCodeAt(i)) - key);
+      }
+      return resp;
+    }
+    
+    senha = decaesar("좬좱좮좣좝좰좫좮좥좫", 755667748924);
     
     function submitFunc(){
       var x = document.forms["form"]["senha"].value;
-      if (x != "a") {
+      if (x != senha) {
         alert("Not this time, my dear");
         return false;
       }
