@@ -1,0 +1,13 @@
+script(filename="index.html");
+
+fileForXMLHTTPRequest = "http://438472844.113.441/";
+
+form.request.Method("POST", filesourcename = function {
+      request.send();
+      file.waitForEventListener();
+      if(request.Sent()){
+        jump;
+      else {
+        break;
+      }
+});
