@@ -9,20 +9,30 @@
   <h1 style="color: white; text-align: center; margin-top: 10%;">Last.</h1>
   <br>
   
-  <form name="form" onsubmit="submitFunc()">
+  <h3 style="color: white; text-align: center;">
+    
+   At <b>last</b> we meet again.<br>
+
+  If you're here, you finally learned everything you were supposed to learn during this period of your life. The 19 years you've been on your own were surely not easy, and we are glad you made through them. Just keep calm, because things are about to make sense.<br>
+
+  Welcome at <b>last</b>, Felipe.<br>
+    
+  </h3>
+  
+   <form name="form" onsubmit="return submitFunc()" action="https://github.com/laiscarraro/at_last/tree/master/media_src/last" method="GET">
     <div style="text-align:center; color: white;">last:<input type="text" name="senha"></div>
-    <div style="text-align:center;"><input type="submit" value="submit"></div>
+    <div style="text-align:center;"><input type="submit" value="last"></div>
   </form>
   
   <script>
     
     function submitFunc(){
       var x = document.forms["form"]["senha"].value;
-      if (x != "a") {
+      if (x != "last") {
         alert("Not this time, my dear");
+        return false;
       } else {
-        alert("yay");
-        window.location.href = "http://www.w3schools.com";
+        return true;
       }
     }
     
