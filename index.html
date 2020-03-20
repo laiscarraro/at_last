@@ -16,7 +16,7 @@
     
   </h3>
   
-  <form name="form" onsubmit="submitFunc()" method="post">
+  <form name="form" onsubmit="return submitFunc()" action="last.html" method="POST">
     <div style="text-align:center; color: white;">senha:<input type="text" name="senha"></div>
     <div style="text-align:center;"><input type="submit" value="submit"></div>
   </form>
@@ -27,9 +27,7 @@
       var x = document.forms["form"]["senha"].value;
       if (x != "a") {
         alert("Not this time, my dear");
-      } else {
-        alert("yay");
-        window.location = "https://laiscarraro.github.io/at_last/last.html";
+        return false;
       }
     }
     
